@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MecaAutoCil</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+<!-- Menu -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">MecaAutoCil</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Inicio -->
+<section id="inicio" class="hero text-center text-white">
+    <div class="container">
+        <h1>MecaAutoCil</h1>
+        <p>¡Si fue creado para correr, lo reparamos!</p>
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="container py-5">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <a href="mantenimiento.html">
+                    <img src="assets\Mantenimiento.jpg" class="card-img-top">
+                </a>
+                    <div class="card-body">
+                        <h5>Mantenimiento</h5>
+                        <p>Cambio de aceite, filtros y revisión general.</p>
+                    </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="col-md-4">
+            <div class="card">
+                <a href="diagnostico.html">
+                    <img src="assets/Diagnostico.jpg" class="card-img-top">
+                </a>
+                    <div class="card-body">
+                        <h5>Diagnóstico</h5>
+                        <p>Escaneo computarizado de fallas.</p>
+                    </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="col-md-4">
+            <div class="card">
+                <a href="reparacion.html">
+                    <img src="assets/Reparaciones.jpg" class="card-img-top">
+                </a>
+                    <div class="card-body">
+                        <h5>Reparación</h5>
+                        <p>Reparación de motor, frenos y transmisión.</p>
+                
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Proyectos -->
+<section id="galeria" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Proyectos Realizados</h2>
+        <div class="row">
+            <div class="col-md-4"><img src="assets/Motor.jpg" class="img-fluid gallery-img"></div>
+            <div class="col-md-4"><img src="assets/Bomba.jpg" class="img-fluid gallery-img"></div>
+            <div class="col-md-4"><img src="assets/Transmision.jpg" class="img-fluid gallery-img"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonios -->
+<section id="testimonios" class="container py-5">
+    <h2 class="text-center mb-4">Testimonios</h2>
+    <div id="lista-testimonios">
+
+        <div class="comentario">
+            <h5>Juan Pérez</h5>
+            <small>Publicado el 05/04/2026</small>
+            <p>Excelente servicio, muy rápidos.</p>
+        </div>
+
+        <div class="comentario">
+            <h5>María López</h5>
+            <small>Publicado el 04/04/2026</small>
+            <p>Mi carro quedó como nuevo.</p>
+        </div>
+
+    </div>
+
+    <!-- Formulario de testimonios -->
+    <div class="mt-5">
+        <h4>Deja tu comentario</h4>
+        <form id="form-testimonio">
+            <input type="text" id="nombre" class="form-control mb-2" placeholder="Tu nombre" required>
+            <textarea id="mensaje" class="form-control mb-2" placeholder="Escribe tu experiencia..." required></textarea>
+            <button class="btn btn-warning">Publicar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="bg-dark text-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+
+        <form id="formulario">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Correo" required>
+            </div>
+
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Mensaje" required></textarea>
+            </div>
+
+            <button class="btn btn-warning w-100">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer class="text-center bg-black text-white p-3">
+    © 2026 MecaAutoCil
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="JS/script.js"></script>
+
+</body>
+</html>
