@@ -23,25 +23,19 @@ $(document).ready(function(){
 });
 
 // Formulario de testimonio
-$("#form-testimonio").submit(function(e){
+$("#form-testimonio").on("submit", function(e) {
     e.preventDefault();
 
-    let nombre = $("#nombre").val();
-    let mensaje = $("#mensaje").val();
+    const nombre = $("#nombre").val();
+    const mensaje = $("#mensaje").val();
+    const fecha = new Date().toLocaleDateString();
 
-    let fecha = new Date().toLocaleDateString();
+    const $comentario = $("<div>").addClass("comentario");
+    $comentario.append($("<h5>").text(nombre));
+    $comentario.append($("<small>").text(`Publicado el ${fecha}`));
+    $comentario.append($("<p>").text(mensaje));
 
-    let nuevoComentario = `
-        <div class="comentario">
-            <h5>${nombre}</h5>
-            <small>Publicado el ${fecha}</small>
-            <p>${mensaje}</p>
-        </div>
-    `;
+    $("#lista-testimonios").prepend($comentario);
 
-    $("#lista-testimonios").prepend(nuevoComentario);
-
-    // Limpiar campos
-    $("#nombre").val('');
-    $("#mensaje").val('');
+    this.reset();
 });
